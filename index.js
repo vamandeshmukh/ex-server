@@ -1,8 +1,9 @@
 // imports 
 import express from 'express'; // import from node_modules 
 import fun from './js-fun.js'; // import from our own scripts 
+// import fun from './src/components/home/js-fun.js'; // import from our own scripts 
 
-// create constants with node_modules imports 
+// create objects with node_modules imports 
 const app = express();
 const port = 9999;
 
