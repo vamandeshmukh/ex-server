@@ -1,4 +1,5 @@
 import express from 'express';
+import fun from './js-fun.js';
 const app = express();
 const port = 9999;
 
@@ -14,6 +15,10 @@ app.get('/', (req, res) => {
 
 app.get('/hello', (req, res) => {
   res.send('Hello World!');
+});
+
+app.get('/fun', (req, res) => {
+  res.send(fun());
 });
 
 app.listen(port, () => {
